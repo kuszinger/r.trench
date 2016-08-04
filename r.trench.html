@@ -1,0 +1,64 @@
+<h2>DESCRIPTION</h2>
+
+<em>r.trench</em> adds an earthwork estimation function to GRASS GIS.
+Its purpose is to calculate an estimated value for eartworks volume and
+also create map of the results
+<p>
+For a successful run, the module needs:
+<p>
+<ul>
+<li>a DTM representing the surface
+</li>
+<li>a vector coverage with one and only one line being the path
+</li>
+<li>parameters of the trapezoid to be 'excavated'
+</li>
+<li>starting and ending height of the path (bottom point height
+at the middle of the trapezoid
+</li>
+</ul>
+The result will be a set of values in map units like the volume in m<sup>3</sup> and length in meters, for example.
+A new dtm is created showing the after-excavation state and another raster
+also calculated containing the scale (depth) of excavation at eat points.
+
+<h2>NOTES</h2>
+
+<p>
+<p>
+<p>
+<p>
+<h3>Tips and tricks</h3>
+To make processing faster
+Setting a higher resolution makes the estimation more exact but also
+reults a longer runtime.
+<ul>
+  <li></li>
+  
+</ul>
+
+
+<h2>EXAMPLE</h2>
+
+<div class="code"><pre>
+# create a landscape 150dpi PDF copy of a workspace
+
+</pre></div>
+
+<h2>SEE ALSO</h2>
+
+<em>
+  <a href="r.mapcalc.html">r.mapcalc</a>,
+  <a href="r.mapcalc.html">r.mapcalc</a>
+</em>
+
+  
+<h2>AUTHOR</h2>
+
+Robert Kuszinger, Giscom Kkt Hungary
+
+<p>
+Based on <em>d.*</em> commands and their functions in GRASS 7 by many authors.<br>
+Depends on <em>ImageMagick</em> multi-platform image manipulation tools.<br>
+
+<p>
+
